@@ -43,7 +43,7 @@ export default function Home({ actualCity, actualCountry, actualWeather:{current
         <title>Weather App</title>
         <link rel="icon" href="/weatherico.ico" />
       </Head>
-      <div class="credit">
+      <div className="credit">
         Developer : <a href="https://www.linkedin.com/in/samuel-jozwiak-5a218b13b/" target="_blank">Samuel Jozwiak</a>
         Designer : <a href="https://dribbble.com/shots/6357271-Weather-Application-for-Desktop" target="_blank">Hassanur Rakib</a>
         Api : <a href="https://openweathermap.org/" target="_blank">OpenWeather</a>
@@ -65,7 +65,7 @@ export default function Home({ actualCity, actualCountry, actualWeather:{current
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps(context) {
   const weatherData = await oneCallWeather(48.85,2.35),
   extraData = formatExtraData(weatherData.current);
   return {

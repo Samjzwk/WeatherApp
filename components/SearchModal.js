@@ -1,5 +1,5 @@
 import styles from './SearchModal.module.scss';
-import { Fragment, useState } from 'react';
+import { Fragment } from 'react';
 
 function SearchModal({citySearch, setCitySearch, searchWeatherCity}) {
 
