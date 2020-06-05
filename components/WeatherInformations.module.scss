@@ -1,0 +1,114 @@
+.informations {
+  display: flex;
+  flex-direction: column;
+  grid-area: informations;
+}
+
+.tempIco {
+  width: 5rem;
+  line-height: 3rem;
+}
+
+.tempIco>img {
+  background-image: white;
+  background-blend-mode: screen;
+}
+
+.title {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: .2rem;
+}
+
+.temperature {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.location {
+  font-size: .7rem;
+  text-decoration: underline;
+  padding-left: .5rem;
+
+}
+
+.locationIco {
+  width: 1rem;
+}
+
+.locationWrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.extraInformations {
+  grid-area: Extra-Informations;
+  justify-self: end;
+}
+
+.extraItems {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.extraTexts {
+  display: flex;
+  flex-direction: column;
+  font-family: Open Sans;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.extraIco {
+  width: 3rem;
+  padding-right: 1rem;
+}
+
+.extraValue {
+  font-family: monospace;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.forecast {
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+  grid-area: Weeks;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0rem 1rem;
+  grid-auto-rows: auto;
+  justify-items: center;
+  justify-self: center;
+  margin: 0 auto;
+}
+
+.forecastItems {
+  display: flex;
+  flex-direction: column;
+}
+
+.forecastDay {
+  margin-bottom: 3rem;
+  font-size: .7rem;
+}
+
+.forecastValue {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.forecastFeelLike {
+  font-size: .8rem;
+  font-weight: 600;
+}

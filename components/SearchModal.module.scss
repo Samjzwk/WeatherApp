@@ -1,0 +1,34 @@
+.searchCity {
+  position: absolute;
+  z-index: 3;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 3rem;
+  background: transparent;
+  border: 0;
+  font-weight: 800;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  box-shadow: 0 0rem 2rem 0.6rem rgba(255, 255, 255, .9);
+  padding: 1rem;
+  outline: 0;
+  color: white;
+
+  &::placeholder {
+    color: white;
+  }
+}
+
+.overlayCity {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  background-color: rgba($color: #000000, $alpha: .6);
+  position: fixed;
+}

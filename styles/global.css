@@ -1,0 +1,68 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+html {
+  height: 100%;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../public/images/background.jpg);
+  background-size: cover;
+  background-position: 50%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Open Sans, sans-serif;
+  font-weight: 300;
+  line-height: 1.8;
+  letter-spacing: .05rem;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+.weather__wrapper {
+  padding: 1rem 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "informations . . Extra-Informations"". . . Extra-Informations""Weeks Weeks Weeks Weeks";
+}
+
+.credit {
+  color: #fff;
+  padding-left: 4rem;
+  font-size: .5rem;
+}
+
+.credit a {
+  padding-right: .3rem;
+}
