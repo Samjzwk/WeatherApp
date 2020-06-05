@@ -17,7 +17,6 @@ export default function Home({ actualCity, actualCountry, actualWeather:{current
   const [citySearch, setCitySearch] = useState('');
 
   const searchWeatherCity = async () => {
-    console.log("test");
     const searchWeather = await currentWeather(citySearch);
     if(searchWeather.coord && searchWeather.coord.length !== 0){
       const weeklySearchWeather = await oneCallWeather(searchWeather.coord.lat,searchWeather.coord.lon),
