@@ -17,6 +17,6 @@ export const formatExtraData = (informations) => {
       'humidity': informations.humidity + ' %', 
       'air pressure': informations.pressure + ' hPa', 
       'cloud Cover': informations.clouds + ' %', 
-      'wind Speed': informations.wind_speed * 3.6 + ' km/h' 
+      'wind Speed': Math.floor(informations.wind_speed * 3.6) + ' km/h' 
     }
 }
